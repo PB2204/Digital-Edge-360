@@ -1,0 +1,34 @@
+.ht_ctc_chat_greetings_box :not(ul):not(ol) {
+    padding: 0;
+    margin: 0
+}
+
+.ht_ctc_chat_greetings_box ul,
+.ht_ctc_chat_greetings_box ol {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.ctc_g_content,
+.ctc_g_sentbutton,
+.ctc_g_bottom {
+    margin-top: -.9px !important
+}
+
+@media only screen and (max-width: 420px) {
+    .ht_ctc_greetings.ctc_m_full_width {
+        position: fixed !important;
+        bottom: 0 !important;
+        right: 0 !important
+    }
+
+    .ht_ctc_greetings.ctc_m_full_width .ht_ctc_chat_greetings_box {
+        position: unset !important;
+        margin: 7px !important;
+        width: calc(100vw - 14px) !important
+    }
+
+    .ht_ctc_greetings.ctc_m_full_width .ctc_g_message_box {
+        width: calc(100% - 45px) !important
+    }
+}
